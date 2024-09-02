@@ -107,13 +107,16 @@
     </section>
     <!-- About Section -->
     <section id="about" class="py-20 px-6 max-w-4xl mx-auto min-h-screen">
-      <div class="relative flex py-5 items-center">
+      <!-- Responsive section header -->
+      <div class="relative flex flex-col items-center py-5 md:flex-row md:items-center">
         <div class="flex-grow border-t border-gray-400"></div>
         <span class="flex-shrink mx-4 text-gray-400">About</span>
         <div class="flex-grow border-t border-gray-400"></div>
-    </div>
-      <div class="flex justify-between items-center">
-        <p class="text-lg">
+      </div>
+    
+      <!-- Responsive content area -->
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-lg mb-6 md:mb-0 md:w-1/2">
           Hello! I'm a passionate web developer with experience in creating
           dynamic and responsive websites. I enjoy working with modern frontend
           technologies and building engaging user interfaces.
@@ -126,9 +129,10 @@
           dynamic and responsive websites. I enjoy working with modern frontend
           technologies and building engaging user interfaces.
         </p>
-        <img src="image-myself.jfif" class="h-[300px]" alt="Myself"/>
+        <img src="image-myself.jfif" class="h-[300px] w-full md:w-auto" alt="Myself"/>
       </div>
     </section>
+    
     
     <script>
       const mobileMenuButton = document.getElementById("mobile-menu-button");
