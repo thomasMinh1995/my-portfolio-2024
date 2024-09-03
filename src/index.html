@@ -202,9 +202,9 @@
 
         <!-- Responsive content area -->
         <div
-          class="flex flex-col md:flex-row items-center text-center md:text-left max-w-4xl mx-auto"
+          class="flex flex-col md:flex-row justify-between text-center md:text-left max-w-4xl mx-auto"
         >
-          <p class="text-lg mb-6 md:mb-0 md:w-1/2 line-clamp-3">
+          <p class="text-lg mb-6 md:mb-0 md:w-1/2">
             Hello! I'm a passionate web developer with experience in creating
             dynamic and responsive websites. I enjoy working with modern
             frontend technologies and building engaging user interfaces. Hello!
@@ -341,9 +341,7 @@
 
       <!-- Projects section  -->
       <section id="projects" class="py-20 px-6 bg-gray-100">
-        <div
-          class="relative flex flex-col items-center py-5 max-w-4xl mx-auto min-h-screen"
-        >
+        <div class="flex flex-col items-center py-5 max-w-4xl mx-auto">
           <!-- Header line and text for all screen sizes -->
           <div class="w-full flex items-center justify-center">
             <div class="flex-grow border-t border-gray-400"></div>
@@ -352,6 +350,112 @@
               >Projects</span
             >
             <div class="flex-grow border-t border-gray-400"></div>
+          </div>
+          <div class="w-full flex flex-col my-3 md:flex-row">
+            <img
+              src="./image-myself.jfif"
+              class="h-[185px] w-full md:w-[455px] md:h-[249px]"
+            />
+            <div
+              class="mt-3 border-b-[1px] border-gray-500 md:border-b-0 md:ml-2 md:mt-0"
+            >
+              <h2>Project name</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent sit amet vestibulum felis vivamus facilisis ligula
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other projects -->
+      <section id="projects" class="py-20 px-6 bg-gray-100">
+        <div class="flex flex-col items-center py-5 max-w-4xl mx-auto">
+          <!-- Header line and text for all screen sizes -->
+          <div class="w-full flex items-center justify-center">
+            <div class="flex-grow border-t border-gray-400"></div>
+            <span
+              class="flex-shrink mx-4 text-gray-400 text-lg md:text-xl font-semibold"
+              >Other projects</span
+            >
+            <div class="flex-grow border-t border-gray-400"></div>
+          </div>
+
+          <!-- other project card -->
+          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-5">
+            <div class="flex my-3 gap-[20px] md:gap-2">
+              <img
+                src="./image-myself.jfif"
+                class="w-[60px] h-[60px] md:w-[95px] md:h-[95px]"
+              />
+              <div class="ml-2">
+                <h2>Other project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent sit amet vestibulum felis vivamus facilisis ligula
+                </p>
+                <div class="border border-black"></div>
+                <div>
+                  <p>Html, CSS, js</p>
+                  <svg
+                    width="22"
+                    height="21"
+                    viewBox="0 0 22 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.03966 20C8.04484 19.2479 8.04484 18.4958 8.05003 17.7437C8.05003 17.116 8.05522 16.4936 8.05522 15.866C8.05522 14.7559 8.06041 13.6407 8.06041 12.5307C8.06041 11.7267 8.06559 10.9279 8.06559 10.1239C8.06559 9.30958 8.0604 8.49522 8.05522 7.68086C8.05522 7.55119 8.05003 7.42151 8.04484 7.29184C8.04484 7.26072 8.04484 7.22441 8.04484 7.19328C8.1019 7.17772 12.2204 7.17254 12.3086 7.1881C12.3086 7.77423 12.3086 8.36036 12.3086 8.95168C12.3137 8.95168 12.3189 8.95687 12.3241 8.95687C12.3397 8.93612 12.3552 8.91537 12.3708 8.88944C12.6042 8.53672 12.8688 8.20994 13.1852 7.92465C13.6883 7.4682 14.2744 7.16735 14.9384 7.00655C15.4208 6.89244 15.9083 6.85613 16.4011 6.87688C16.8887 6.89763 17.3659 6.97024 17.8327 7.12585C18.9739 7.49932 19.809 8.23587 20.3588 9.3044C20.6181 9.81272 20.7893 10.3522 20.8982 10.9072C20.9553 11.1977 20.9916 11.4881 21.0175 11.7838C21.0227 11.8408 21.0227 11.9031 21.0227 11.9601C21.0227 11.9913 21.0331 12.0224 21.0383 12.0483C21.0383 14.6989 21.0383 17.3443 21.0383 19.9948C19.6222 19.9948 18.201 19.9948 16.7849 19.9948C16.7849 19.9689 16.7849 19.9429 16.7849 19.917C16.7849 17.6503 16.7849 15.3784 16.7849 13.1117C16.7849 12.7901 16.7642 12.4685 16.7071 12.1469C16.6501 11.8305 16.5619 11.5296 16.4115 11.2443C16.2144 10.8657 15.9291 10.5752 15.5297 10.404C15.2963 10.3055 15.0525 10.2536 14.7983 10.2381C14.5338 10.2225 14.2692 10.2432 14.0151 10.3107C13.5327 10.4404 13.1437 10.7153 12.8376 11.1095C12.6302 11.3792 12.4642 11.6749 12.3812 12.0068C12.3241 12.2506 12.3086 12.4996 12.3086 12.7486C12.3086 15.1346 12.3086 17.5206 12.3086 19.9118C12.3086 19.9378 12.3086 19.9637 12.3086 19.9896C10.8821 20 9.4609 20 8.03966 20Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.2"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M1.42624 20.0001C1.42624 19.969 1.42624 19.9327 1.42624 19.9016C1.42624 15.7001 1.42624 11.4986 1.42624 7.29716C1.42624 7.26085 1.42624 7.22454 1.42624 7.18823C2.85267 7.18823 4.26872 7.18823 5.68996 7.18823C5.68996 7.22973 5.68996 7.26604 5.68996 7.29716C5.68996 9.47051 5.68996 11.6439 5.68996 13.812C5.68996 15.8402 5.68996 17.8735 5.68996 19.9016C5.68996 19.9327 5.69514 19.969 5.69514 20.0001C4.27391 20.0001 2.84748 20.0001 1.42624 20.0001Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.2"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M3.83301 1.00519C3.90562 1.01556 3.97305 1.02593 4.04567 1.03631C4.46582 1.09855 4.84966 1.24898 5.17644 1.5187C5.55509 1.82473 5.78851 2.21895 5.90262 2.69096C6.01673 3.17854 5.9908 3.65575 5.78851 4.11739C5.53434 4.69833 5.08826 5.07699 4.49694 5.28965C4.20647 5.39339 3.90562 5.43489 3.59959 5.44008C3.17426 5.44526 2.76448 5.37783 2.38064 5.18591C1.73227 4.86432 1.34324 4.34043 1.20838 3.62981C1.19282 3.56238 1.17726 3.49495 1.1617 3.42752C1.1617 3.28747 1.1617 3.14742 1.1617 3.00737C1.17726 2.93475 1.19282 2.86732 1.20838 2.7947C1.30693 2.276 1.55591 1.84548 1.97087 1.51351C2.31321 1.24379 2.70224 1.09337 3.12757 1.03112C3.195 1.02075 3.26243 1.01037 3.32987 1C3.50104 1.00519 3.66702 1.00519 3.83301 1.00519Z"
+                      stroke="#1F1F1F"
+                      stroke-width="1.2"
+                      stroke-miterlimit="10"
+                    />
+                  </svg>
+                  <svg
+                    width="18"
+                    height="21"
+                    viewBox="0 0 18 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.77708 16.9318C2.62324 18.2159 2.62324 14.7917 0.9617 14.3637M12.5925 19.5V16.1871C12.6236 15.7789 12.5701 15.3685 12.4355 14.9833C12.3008 14.5981 12.0881 14.2468 11.8115 13.9528C14.4202 13.6532 17.1617 12.6345 17.1617 7.96044C17.1615 6.76524 16.7153 5.61588 15.9155 4.75025C16.2943 3.70459 16.2675 2.54878 15.8408 1.52294C15.8408 1.52294 14.8605 1.22332 12.5925 2.78989C10.6884 2.25813 8.6812 2.25813 6.77708 2.78989C4.50908 1.22332 3.52878 1.52294 3.52878 1.52294C3.10207 2.54878 3.0753 3.70459 3.45401 4.75025C2.64827 5.62231 2.20164 6.78205 2.20785 7.98612C2.20785 12.6259 4.94939 13.6446 7.55801 13.9785C7.28468 14.2695 7.07389 14.6166 6.93934 14.9971C6.80479 15.3776 6.74951 15.7831 6.77708 16.1871V19.5"
+                      stroke="#1F1F1F"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex my-3 gap-[20px] md:gap-2">
+              <img
+                src="./image-myself.jfif"
+                class="w-[60px] h-[60px] md:w-[95px] md:h-[95px]"
+              />
+              <div class="ml-2">
+                <h2>Other project</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent sit amet vestibulum felis vivamus facilisis ligula
+                </p>
+                <div class="border border-black"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
