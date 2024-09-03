@@ -108,32 +108,51 @@
     <!-- About Section -->
     <section id="about" class="py-20 px-6 max-w-4xl mx-auto min-h-screen">
       <!-- Responsive section header -->
-      <div class="relative flex flex-col items-center py-5 md:flex-row md:items-center">
-        <div class="flex-grow border-t border-gray-400"></div>
-        <span class="flex-shrink mx-4 text-gray-400">About</span>
-        <div class="flex-grow border-t border-gray-400"></div>
+      <div class="relative flex flex-col items-center py-5">
+        <!-- Header line and text for all screen sizes -->
+        <div class="w-full flex items-center justify-center">
+          <div class="flex-grow border-t border-gray-400"></div>
+          <span class="flex-shrink mx-4 text-gray-400 text-lg md:text-xl font-semibold">About</span>
+          <div class="flex-grow border-t border-gray-400"></div>
+        </div>
       </div>
-    
+      
       <!-- Responsive content area -->
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <p class="text-lg mb-6 md:mb-0 md:w-1/2">
+      <div class="flex flex-col md:flex-row items-center text-center md:text-left">
+        <p class="text-lg mb-6 md:mb-0 md:w-1/2 line-clamp-3">
           Hello! I'm a passionate web developer with experience in creating
           dynamic and responsive websites. I enjoy working with modern frontend
           technologies and building engaging user interfaces.
-    
+          
           Hello! I'm a passionate web developer with experience in creating
           dynamic and responsive websites. I enjoy working with modern frontend
           technologies and building engaging user interfaces.
-    
+          
           Hello! I'm a passionate web developer with experience in creating
           dynamic and responsive websites. I enjoy working with modern frontend
           technologies and building engaging user interfaces.
         </p>
-        <img src="image-myself.jfif" class="h-[300px] w-full md:w-auto" alt="Myself"/>
+        <img src="image-myself.jfif" class="h-[300px] w-full md:w-auto" alt="Myself" />
       </div>
+    
+      <!-- SVG Arrow -->
+      <a href="#services" class="block text-center mt-8">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto">
+          <g clip-path="url(#clip0_506_5)">
+            <path d="M16 20.5L7 11.5" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M25 11.5L16 20.5" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16 32L7 23" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M25 23L16 32" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+          <defs>
+            <clipPath id="clip0_506_5">
+              <rect width="32" height="32" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
     </section>
-    
-    
+
     <script>
       const mobileMenuButton = document.getElementById("mobile-menu-button");
       const mobileMenu = document.getElementById("mobile-menu");
