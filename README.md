@@ -5,6 +5,15 @@ I'm using TailwindCSS for styling the responsive. This **Readme.md** file will b
 ## August-26-2024
 - [x] Create repository for my portfolio project
 - [x] Add files into repository
-- [ ] Update the Hero section
-- [ ] Update the About me section
-- [ ] Update the Project section
+
+## September-03-2024
+- [x] Add the Hero section
+- [x] Add the About me section
+- [x] Add the Experiences section
+- [x] Add the Projects and Other projects section 
+- [x] Add the Contact us section
+
+## Todo (in the future):
+- [x] Add Footer
+- [ ] Add Nextjs inside this project
+
