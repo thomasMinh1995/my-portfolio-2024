@@ -26,7 +26,27 @@
           opacity: 0;
         }
       }
+
+      .typing-effect {
+        overflow: hidden;
+        display: inline-block;
+      }
+      .cursor-blink {
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        0% {
+          border-color: transparent;
+        }
+        50% {
+          border-color: black;
+        }
+        100% {
+          border-color: transparent;
+        }
+      }
     </style>
+    <script src="typing.js"></script>
   </head>
 
   <body>
@@ -128,14 +148,15 @@
       </nav>
       <!-- Hero Section -->
       <section
-        class="bg-blue-600 text-white text-center py-2 flex flex-col items-center justify-center min-h-screen"
+        class="bg-white text-white text-center py-2 flex flex-col items-center justify-center min-h-screen gap-3.5"
       >
         <div>
-          <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
+          <h1 class="text-4xl text-black font-bold">Welcome to My Portfolio</h1>
         </div>
         <div>
-          <p class="mt-4 text-lg">
-            I'm a web developer specializing in frontend technologies.
+          <p class="text-black text-lg">
+            I'm a web developer specializing in frontend technologies (and
+            more).
           </p>
         </div>
         <a href="#about">
@@ -145,7 +166,6 @@
             viewBox="0 0 32 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="mt-4"
           >
             <g clip-path="url(#clip0_506_5)">
               <path
@@ -204,16 +224,20 @@
         <div
           class="flex flex-col md:flex-row justify-between text-center md:text-left max-w-4xl mx-auto"
         >
-          <p class="text-lg mb-6 md:mb-0 md:w-1/2">
-            Hello! I'm a passionate web developer with experience in creating
-            dynamic and responsive websites. I enjoy working with modern
-            frontend technologies and building engaging user interfaces. Hello!
-            I'm a passionate web developer with experience in creating dynamic
-            and responsive websites. I enjoy working with modern frontend
-            technologies and building engaging user interfaces. Hello! I'm a
-            passionate web developer with experience in creating dynamic and
-            responsive websites. I enjoy working with modern frontend
-            technologies and building engaging user interfaces.
+          <p id="section-hero" class="text-lg mb-6 md:mb-0 md:w-1/2">
+            Hi there! I'm Thomas Minh, a passionate front-end developer with
+            over a year of experience in ReactJS and two years working with
+            Vue2. I have a solid background in writing documentation and
+            communicating effectively in English. My expertise extends to
+            working with GraphQL, RESTful APIs, and styling UI with SCSS.
+            <br />I’m comfortable using tools like Jira, <br />Confluence, and
+            Git to manage and track projects efficiently. I’m always eager to
+            learn new technologies and techniques to enhance my skills and
+            contribute to innovative projects. Feel free to check out my work on
+            GitHub:
+            <a href="https://github.com/thomasMinh1995" target="_blank"
+              >ThomasMinh1995</a
+            >. Looking forward to connecting and collaborating!
           </p>
           <img
             src="image-myself.jfif"
@@ -273,79 +297,79 @@
 
       <!-- Experiences section -->
       <section
-        id="experiences"
-        class="py-20 px-6 max-w-4xl mx-auto min-h-screen bg-white"
-      >
-        <div class="relative flex flex-col items-center py-5">
-          <!-- Header line and text for all screen sizes -->
-          <div class="w-full flex items-center justify-center">
-            <div class="flex-grow border-t border-gray-400"></div>
-            <span
-              class="flex-shrink mx-4 text-gray-400 text-lg md:text-xl font-semibold"
-              >Experiences</span
+      id="experiences"
+      class="py-20 px-6 max-w-4xl mx-auto min-h-screen bg-white"
+    >
+      <div class="relative flex flex-col items-center py-5">
+        <!-- Header line and text for all screen sizes -->
+        <div class="w-full flex items-center justify-center">
+          <div class="flex-grow border-t border-gray-400"></div>
+          <span
+            class="flex-shrink mx-4 text-gray-400 text-lg md:text-xl font-semibold"
+            >Experiences</span
+          >
+          <div class="flex-grow border-t border-gray-400"></div>
+        </div>
+      </div>
+      <div class="pb-3 flex flex-col md:flex-row md:justify-between">
+        <div
+          class="border-t-0 border-r-0 border-b-0 border-l-0 md:border-r-[1px] md:border-l-0 md:border-gray-500 md:text-end md:pr-[20px]"
+        >
+          <h2>Job title</h2>
+          <div class="flex flex-row md:flex-col">
+            <p
+              class="border-t-0 border-r-0 border-b-0 border-l-0 md:border-b-[1px] md:border-gray-500"
             >
-            <div class="flex-grow border-t border-gray-400"></div>
+              Company name
+            </p>
+            <p>April 2018 - December 12 2022</p>
           </div>
         </div>
-        <div class="pb-3 flex flex-col md:flex-row md:justify-between">
-          <div
-            class="border-t-0 border-r-0 border-b-0 border-l-0 md:border-r-[1px] md:border-l-0 md:border-gray-500 md:text-end md:pr-[20px]"
-          >
-            <h2>Job title</h2>
-            <div class="flex flex-row md:flex-col">
-              <p
-                class="border-t-0 border-r-0 border-b-0 border-l-0 md:border-b-[1px] md:border-gray-500"
-              >
-                Company name
-              </p>
-              <p>April 2018 - December 12 2022</p>
-            </div>
+        <ul class="list-inside pl-[20px]">
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            sit amet vestibulum felis vivamus facilisis ligula
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            sit amet vestibulum felis vivamus facilisis ligula
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            sit amet vestibulum felis vivamus facilisis ligula
+          </li>
+        </ul>
+      </div>
+      <div class="pb-3 flex flex-col-reverse md:flex-row md:justify-between">
+        <ul class="list-inside pl-[20px]">
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            sit amet vestibulum felis vivamus facilisis ligula
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            sit amet vestibulum felis vivamus facilisis ligula
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            sit amet vestibulum felis vivamus facilisis ligula
+          </li>
+        </ul>
+        <div
+          class="border-t-0 border-r-0 border-b-0 border-l-0 md:border-r-[1px] md:border-l-0 md:border-gray-500 md:text-end md:pr-[20px]"
+        >
+          <h2>Job title</h2>
+          <div class="flex flex-row md:flex-col">
+            <p
+              class="border-t-0 border-r-0 border-b-0 border-l-0 md:border-b-[1px] md:border-gray-500"
+            >
+              Company name
+            </p>
+            <p>April 2018 - December 12 2022</p>
           </div>
-          <ul class="list-inside pl-[20px]">
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              sit amet vestibulum felis vivamus facilisis ligula
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              sit amet vestibulum felis vivamus facilisis ligula
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              sit amet vestibulum felis vivamus facilisis ligula
-            </li>
-          </ul>
         </div>
-        <div class="pb-3 flex flex-col md:flex-row md:justify-between">
-          <div
-            class="border-t-0 border-r-0 border-b-0 border-l-0 md:border-r-[1px] md:border-l-0 md:border-gray-500 md:text-end md:pr-[20px]"
-          >
-            <h2>Job title</h2>
-            <div class="flex flex-row md:flex-col">
-              <p
-                class="border-t-0 border-r-0 border-b-0 border-l-0 md:border-b-[1px] md:border-gray-500"
-              >
-                Company name
-              </p>
-              <p>April 2018 - December 12 2022</p>
-            </div>
-          </div>
-          <ul class="list-inside pl-[20px]">
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              sit amet vestibulum felis vivamus facilisis ligula
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              sit amet vestibulum felis vivamus facilisis ligula
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              sit amet vestibulum felis vivamus facilisis ligula
-            </li>
-          </ul>
-        </div>
-      </section>
+      </div>
+    </section>
 
       <!-- Projects section  -->
       <section id="projects" class="py-20 px-6 bg-gray-100">
