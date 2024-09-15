@@ -15,5 +15,4 @@ I'm using TailwindCSS for styling the responsive. This **Readme.md** file will b
 
 ## Todo (in the future):
 - [x] Add Footer
-- [ ] Add Nextjs inside this project
-
+- [x] Add typing effect for section hero
