@@ -15,4 +15,4 @@ I'm using TailwindCSS for styling the responsive. This **Readme.md** file will b
 
 ## Todo (in the future):
 - [x] Add Footer
-- [x] Add typing effect for section hero
+- [x] Add typing effect for section hero (Done On Sep-15-2024)
